@@ -1,6 +1,7 @@
 import ActionButton from "./components/ActionButton";
 import Score from "./components/Score";
 import Wrapper from "./components/Wrapper";
+import cards from "./assets/cards/cards.ts";
 
 export default function App() {
   return (
@@ -31,6 +32,19 @@ export default function App() {
       </ActionButton>
       <Score>8</Score>
       <Score>14</Score>
+      <p>
+        Cantidad de cartas: <Score>{cards.length}</Score>
+      </p>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {cards.map((card) => (
+          <img
+            key={card.id}
+            src={card.img}
+            alt={card.nombre}
+            style={{ width: "100px", height: "150px" }}
+          />
+        ))}
+      </div>
     </Wrapper>
   );
 }
