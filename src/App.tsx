@@ -7,26 +7,26 @@ export default function App() {
   return (
     <Wrapper>
       <ActionButton
-        backgroundColor="#1CFF4D"
-        boxShadowColor="rgba(28, 255, 77, 0.5)"
+        backgroundColor="rgb(28, 255, 77)"
+        boxShadowColor="rgb(33, 195, 68)"
       >
         pedir
       </ActionButton>
       <ActionButton
-        backgroundColor="#FF1C1C"
-        boxShadowColor="rgba(255, 28, 28, 0.7)"
+        backgroundColor="rgb(255, 28, 28)"
+        boxShadowColor="rgb(185, 32, 32)"
       >
         plantar
       </ActionButton>
       <ActionButton
-        backgroundColor="#1C8DFF"
-        boxShadowColor="rgba(28, 141, 255, 0.5)"
+        backgroundColor="rgb(28, 141, 255)"
+        boxShadowColor="rgb(32, 111, 189)"
       >
         dividir
       </ActionButton>
       <ActionButton
-        backgroundColor="#FFD61C"
-        boxShadowColor="rgba(255, 214, 28, 0.5)"
+        backgroundColor="rgb(255, 214, 28)"
+        boxShadowColor="rgb(200, 169, 31)"
       >
         doblar
       </ActionButton>

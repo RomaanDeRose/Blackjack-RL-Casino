@@ -4,24 +4,29 @@ const ActionButton = styled.button<{
   backgroundColor: string;
   boxShadowColor: string;
 }>((props) => ({
-  backgroundColor: props.boxShadowColor,
+  all: "unset",
+  boxSizing: "content-box",
+  width: "90px",
+  height: "70px",
+  fontFamily: "system-ui",
+  fontSize: "1.1rem",
   color: "#fff",
+  fontWeight: 500,
   textTransform: "uppercase",
   textAlign: "center",
-  width: "85px",
-  height: "85px",
-  fontSize: "1.1rem",
+  backgroundColor: props.backgroundColor,
+  boxShadow: `0px 10px 0px ${props.boxShadowColor}, 0px 11px 5px hsla(0, 0%, 0%, 0.5)`,
+  borderbottom: "1px solid hsla(0, 0%, 100%, 0.2)",
+  borderRadius: "8px",
+  margin: "1rem .5rem",
   cursor: "pointer",
-  borderRadius: "50%",
-  border: "none",
-  boxSizing: "content-box",
-  transition: "all 0.15s ease",
+  transition: "all 0.2s ease",
   "&:hover": {
-    boxShadow: `0 0 15px 0px ${props.boxShadowColor}`,
-    backgroundColor: `${props.backgroundColor}`,
+    transform: "translateY(-4px)",
   },
   "&:active": {
-    transform: "scale(0.95)",
+    boxShadow: `0px 3px 0px ${props.boxShadowColor}, 0px 4px 6px hsla(0, 0%, 0%, 0.7)`,
+    transform: "translateY(7px)",
   },
 }));
 
